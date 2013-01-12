@@ -526,6 +526,7 @@
 			[[SceneManager sharedSceneManager].scoreArray removeObjectAtIndex:0];
 			[[SceneManager sharedSceneManager].scoreArray addObject:scoreString];
 		}
+        [scoreString release];
 		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 		
 		[defaults setObject:[SceneManager sharedSceneManager].scoreArray forKey:@"scoreArray"];

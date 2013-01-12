@@ -77,4 +77,10 @@ static SceneManager* _sharedSceneManger = nil;
     return newScene;
 }
 
+-(void) dealloc{
+    [playerName release];
+    [scoreArray release];
+    [super dealloc];
+}
+
 @end
