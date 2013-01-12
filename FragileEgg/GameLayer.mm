@@ -153,9 +153,9 @@
 		
 		birdCoo = [CCSprite spriteWithFile:@"BirdCoo1.png"];
 		if(level == 1){
-			birdCoo.position = ccp(610, 495);
+			birdCoo.position = ccp(610, 435);
 		}else if(level == 2){
-			birdCoo.position = ccp(630, 390);
+			birdCoo.position = ccp(600, 430);
 		}else if(level == 3){
 			birdCoo.position = ccp(580, 515);
 		}
@@ -186,7 +186,6 @@
 }
 
 -(void) addEggs{
-	
 	switch (level){
 		case 3:
 			egg1 = [EggObject spriteWithFile:@"level3_egg1.png"];
@@ -259,35 +258,35 @@
 			break;
 			
 		case 2:
-			egg1.position = ccp(379, 688);
-			egg2.position = ccp(447, 701);
-			egg3.position = ccp(503, 688);
-			egg4.position = ccp(196, 566);
-			egg5.position = ccp(334, 553);
-			egg6.position = ccp(268, 565);
-			egg7.position = ccp(754, 591);
-			egg8.position = ccp(691, 581);
-			egg9.position = ccp(632, 595);
+			egg1.position = ccp(353, 651);
+			egg2.position = ccp(463, 668);
+			egg3.position = ccp(563, 655);
+			egg4.position = ccp(96, 432);
+			egg5.position = ccp(201, 450);
+			egg6.position = ccp(303, 432);
+			egg7.position = ccp(913, 558);
+			egg8.position = ccp(800, 543);
+			egg9.position = ccp(697, 550);
 			
-			egg1.final = ccp(379, 688);
-			egg2.final = ccp(447, 701);
-			egg3.final = ccp(503, 688);
-			egg4.final = ccp(196, 566);
-			egg5.final = ccp(334, 553);
-			egg6.final = ccp(268, 565);
-			egg7.final = ccp(754, 591);
-			egg8.final = ccp(691, 581);
-			egg9.final = ccp(632, 595);
+			egg1.final = ccp(353, 651);
+			egg2.final = ccp(463, 668);
+			egg3.final = ccp(563, 655);
+			egg4.final = ccp(96, 432);
+			egg5.final = ccp(201, 450);
+			egg6.final = ccp(303, 432);
+			egg7.final = ccp(913, 558);
+			egg8.final = ccp(800, 543);
+			egg9.final = ccp(697, 550);
 			break;
 		
 		case 1:
-			egg1.position = ccp(346, 682);
-			egg2.position = ccp(415, 695);
-			egg3.position = ccp(471, 682);
+			egg1.position = ccp(307, 649);
+			egg2.position = ccp(421, 666);
+			egg3.position = ccp(521, 649);
 			
-			egg1.final = ccp(346, 682);
-			egg2.final = ccp(415, 695);
-			egg3.final = ccp(471, 682);
+			egg1.final = ccp(307, 649);
+			egg2.final = ccp(421, 666);
+			egg3.final = ccp(521, 649);
 			break;
 		
 		default:
@@ -543,7 +542,7 @@
 	// Instruct the world to perform a single step of simulation. It is
 	// generally best to keep the time step and iterations fixed.
 	world->Step(dt, velocityIterations, positionIterations);
-	angle+=10;
+	angle+=5;
 	
 	//Iterate over the bodies in the physics world
 	for (b2Body* b = world->GetBodyList(); b; b = b->GetNext())

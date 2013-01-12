@@ -329,14 +329,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {826, 374}}</string>
+								<string>{{0, 0}, {826, 365}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 61 1280 717 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>374pt</string>
+							<string>365pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -349,14 +349,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 379}, {826, 297}}</string>
+								<string>{{0, 370}, {826, 306}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 61 1280 717 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>297pt</string>
+							<string>306pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -375,9 +375,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>BE2BE18216A1375900358996</string>
+				<string>BE61B8A916A20BD600C1F411</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>BE2BE18316A1375900358996</string>
+				<string>BE61B8AA16A20BD600C1F411</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -515,12 +515,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>BE2BE18416A1375900358996</string>
-		<string>BE2BE18516A1375900358996</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BE27452F16A12B2C00859D7E</string>
-		<string>/Users/socialapp/Desktop/FragileEgg/FragileEgg.xcodeproj</string>
+		<string>/Users/socialapp/Desktop/FragileEggs/FragileEgg.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 61 1280 717 0 0 1280 778 </string>
@@ -561,8 +557,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -602,7 +596,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>BE27452F16A12B2C00859D7E</string>
-				<string>BE2BE17A16A1375700358996</string>
+				<string>BE61B8AB16A20BD600C1F411</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
