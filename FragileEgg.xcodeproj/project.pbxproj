@@ -248,14 +248,13 @@
 		BE93D45016A2102500B84C5C /* level3_key1.png in Resources */ = {isa = PBXBuildFile; fileRef = BE93D44116A2102500B84C5C /* level3_key1.png */; };
 		BE93D45116A2102500B84C5C /* level3_key2.png in Resources */ = {isa = PBXBuildFile; fileRef = BE93D44216A2102500B84C5C /* level3_key2.png */; };
 		BE93D45216A2102500B84C5C /* level3_key3.png in Resources */ = {isa = PBXBuildFile; fileRef = BE93D44316A2102500B84C5C /* level3_key3.png */; };
-		BEDD929D16A1309A003E1483 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEDD929C16A1309A003E1483 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE4C928816A2118000E2EB0D /* Tree1Nest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tree1Nest1.png; sourceTree = "<group>"; };
 		BE4C928916A2118000E2EB0D /* Tree2Nest3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tree2Nest3.png; sourceTree = "<group>"; };
 		BE4C928A16A2118000E2EB0D /* Tree3Nest5_with_keys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tree3Nest5_with_keys.png; sourceTree = "<group>"; };
-		BE66E30916A1234B0070C661 /* FragileEgg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FragileEgg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE66E30916A1234B0070C661 /* FragileEggs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FragileEggs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE66E30D16A1234B0070C661 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BE66E30F16A1234B0070C661 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BE66E31116A1234B0070C661 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -694,7 +693,7 @@
 		BE66E30A16A1234B0070C661 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE66E30916A1234B0070C661 /* FragileEgg.app */,
+				BE66E30916A1234B0070C661 /* FragileEggs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1306,7 +1305,7 @@
 			);
 			name = FragileEgg;
 			productName = FragileEgg;
-			productReference = BE66E30916A1234B0070C661 /* FragileEgg.app */;
+			productReference = BE66E30916A1234B0070C661 /* FragileEggs.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1404,7 +1403,6 @@
 				BE66E5BD16A123710070C661 /* Wind13.png in Resources */,
 				BE66E5BE16A123710070C661 /* Wind14.png in Resources */,
 				BE66E5BF16A123710070C661 /* Wind15.png in Resources */,
-				BEDD929D16A1309A003E1483 /* Info.plist in Resources */,
 				BE93D42C16A2100C00B84C5C /* Egg1.png in Resources */,
 				BE93D42D16A2100C00B84C5C /* Egg2.png in Resources */,
 				BE93D42E16A2100C00B84C5C /* Egg3.png in Resources */,
@@ -1593,8 +1591,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
-					armv7,
 					armv6,
+					armv7,
+					armv7s,
 				);
 				CODE_SIGN_IDENTITY = "iPhone Developer: Greg Niemeyer (77Y6R64Y88)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1612,6 +1611,7 @@
 				PROVISIONING_PROFILE = "C5BA0CAE-82D9-46FF-A197-57721D004C50";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv6 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1619,8 +1619,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
-					armv7,
 					armv6,
+					armv7,
+					armv7s,
 				);
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Greg Niemeyer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1634,6 +1635,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv6 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -1642,8 +1644,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = (
-					armv7,
 					armv6,
+					armv7,
+					armv7s,
 				);
 				CODE_SIGN_IDENTITY = "iPhone Developer: Greg Niemeyer (77Y6R64Y88)";
 				COPY_PHASE_STRIP = NO;
@@ -1655,10 +1658,11 @@
 				INFOPLIST_FILE = FragileEgg/Resources/Info.plist;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-lz";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FragileEggs;
 				PROVISIONING_PROFILE = "4E7F49FB-EC5C-481D-A0FD-240682F8532F";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "\"FragileEgg/libs\"";
+				VALID_ARCHS = "armv6 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1668,8 +1672,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = (
-					armv7,
 					armv6,
+					armv7,
+					armv7s,
 				);
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Greg Niemeyer";
 				COPY_PHASE_STRIP = YES;
@@ -1680,11 +1685,12 @@
 				INFOPLIST_FILE = FragileEgg/Resources/Info.plist;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-lz";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FragileEggs;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "\"FragileEgg/libs\"";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

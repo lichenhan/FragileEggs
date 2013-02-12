@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE66E30816A1234B0070C661"
-               BuildableName = "FragileEgg.app"
+               BuildableName = "FragileEggs.app"
                BlueprintName = "FragileEgg"
                ReferencedContainer = "container:FragileEgg.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE66E30816A1234B0070C661"
-            BuildableName = "FragileEgg.app"
+            BuildableName = "FragileEggs.app"
             BlueprintName = "FragileEgg"
             ReferencedContainer = "container:FragileEgg.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE66E30816A1234B0070C661"
-            BuildableName = "FragileEgg.app"
+            BuildableName = "FragileEggs.app"
             BlueprintName = "FragileEgg"
             ReferencedContainer = "container:FragileEgg.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE66E30816A1234B0070C661"
-            BuildableName = "FragileEgg.app"
+            BuildableName = "FragileEggs.app"
             BlueprintName = "FragileEgg"
             ReferencedContainer = "container:FragileEgg.xcodeproj">
          </BuildableReference>
